@@ -1,0 +1,245 @@
+*{
+	display: block;
+	padding: 0;
+	margin: 0 auto;
+	list-style: none;
+}
+.content{
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+.blog-head{
+	width: 100%;
+	display: block;
+	background: red;
+	position: relative;
+}
+.blog-head img{
+	width: 100%;
+}
+.blog-head .centent-img{
+	width: 200px;
+	position: absolute;
+	top: 50%;
+	left: 50%; 
+	margin-left: -100px;
+	margin-top: -55px;
+}
+.blog-nav{
+	width: 100%;
+	height: 50px;
+	background: #fff;
+}
+.nav-list{
+	width: 100%;
+	max-width: 1200px;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.nav-list> li{
+	width: 100%;
+	height: 100%;
+}
+.nav-list> li > a{
+	width: 100%;
+	height: 100%;
+	line-height: 50px;
+	text-align: center;
+	display: block;
+	border-bottom: 2px solid transparent;
+	text-decoration: none;
+}
+.nav-list> li > a:hover{
+	border-bottom: 2px solid orange;
+}
+.container{
+	padding: 50px;
+}
+.m{
+	width: 100%;
+	padding: 30px;
+	background: #fff;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+.m > p {
+	width: 100%;
+	text-align: center;
+}
+.m > p span{
+	display: inline-block;
+	color: orange;
+}
+.m > .text{
+	text-align: left;
+	text-indent: 2em;
+}
+.m > .btn{
+	margin-top: 20px;
+}
+.user-m{
+	background: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.user-m > h3{
+	margin-top: 10px;
+	background: #fff;
+	border-bottom: 1px solid #eee;
+	text-align: left !important;
+}
+.user-m > h3 > span{
+	display: inline-block;
+	border-bottom: 1px solid orange;
+	padding-bottom: 10px;
+}
+.user-m > .next{
+	display: block;
+	text-align: right;
+}
+.user-m > .next > a{
+	display: inline-block;
+}
+.user-admin p{
+	color: orange;
+}
+.user-login{
+	text-align: center;
+}
+.user-login p{
+	text-align: center;
+}
+.user-login input{
+	display: inline-block;
+}
+.user-registe {
+	text-align: center;
+}
+.user-registe > p{
+	text-align: center;
+}
+.user-registe > p > input{
+	display: inline-block;
+}
+.user-login .btn,.user-registe .btn{
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.colWarning{
+	color: orange;
+}
+
+/* ================================= */
+.pager{
+	background: #fff;
+	padding: 10px 0;
+}
+.pager li>a,
+.pager li>span {
+	border-radius: 0;
+	border: none;
+}
+.pager li>a,
+.pager li>span:hover{
+	background-color: #fff;
+}
+.nav-list> li > .focus{
+	border-bottom: 2px solid orange;
+}
+
+.listBox{
+	width: 100%;
+	background: #fff;
+	padding: 20px 0;
+}
+.listBox h1{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.listBox p{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.listBox span{
+	display: inline-block;
+	color: #000000;
+}
+.listBox .content{
+	font-style: normal;
+	padding: 30px;
+}
+.message{
+	width: 100%;
+	padding: 20px;
+	margin-top: 20px;
+}
+.message h3{
+	font-size: 14px;
+	display: flex;
+	justify-content: space-between;
+}
+.message strong{
+	display: inline-block;
+	font-size: 16px;
+	margin-left: 0;
+}
+.message span{
+	margin-right: 0;
+}
+.message em{
+	display: inline-block;
+	list-style: normal;
+}
+.message h1 {
+	display: inline-block;
+}
+.textLeft{
+	width: 100%;
+	display: block;
+	text-align: left !important;
+	overflow: hidden;
+	color: #000;
+	overflow: hidden;
+}
+.textLeft textarea{
+	height: 50px;
+	display: inline-block;
+	border: 2px solid #2088be;
+	border-right: none;
+	width: 80%;
+	color: #000;
+	float: left;
+}
+.textLeft button{
+	height: 50px;
+	display: inline-block;
+	border-right: none;
+	width: 20%;
+	border: none;
+	background: #2088be;
+	font-size: 16px;
+	color: #fff;
+	float: left;
+}
+.bgDanger{
+	width: 100%;
+	padding: 2px 0;
+	background: orange;
+	color: #fff;
+}
+.messageBox .cats{
+	text-align: left;
+}
+.messageBox .name{
+	display: flex;
+	justify-content: space-between;
+}
+.messageBox .name .fl{
+	margin-left: 0;
+}

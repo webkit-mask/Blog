@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+{% block content %}
+<ol class="module">
+	{% for content in contents %}
+	<li class="m">
+		<h3 class="text-center">{{content.title}}</h3>
+		<p class="text-center users">作者：<span>{{content.user.username}}</span>-时间：<span>{{content.addTime|date('Y-m-d h:i:s',
+				-8*60)}}</span>-阅读：<span>{{content.views}}</span>-评论：<span>{{content.comments.length}}</span></p>
+		<h4>{{content.description}}</h4>
+		<a href="/view?contenId={{content.id}}" type="button" class="btn btn-warning">阅读全文</a>
+	</li>
+	{% endfor %}
+</ol>
+
+<nav>
+	<ul class="pager">
+		{% if page <= 1 %} <li class="previous"><span aria-hidden="true">没有上一页了</span> </li>
+			{% else %}
+			<li class="previous"><a href="/?category={{category}}&page={{page-1}}"><span aria-hidden="true">上一页</span> </a></li>
+			{% endif %}
+
+			{% if pages > 0 %}
+			<li style="line-height: 30px;">{{page}} / {{pages}}</li>
+			{% endif %}
+
+			{% if page >= pages %}
+			<li class="next"><span aria-hidden="true">没有下一页了</span></li>
+			{% else %}
+			<li class="next"><a href="/?category={{category}}&page={{page+1}}">下一页 <span aria-hidden="true"></span></a></li>
+		{% endif %}
+	</ul>
+</nav>
+{% endblock %}
